@@ -1,0 +1,52 @@
+{
+    "name": "App de Peluqueria Maldonado",
+    "short_name": "PeluApp",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fee0ed",
+    "description": "una aplicacion que te va a facilitar el acceso a un servicio de peluqueria de primer nivel en Maldonado, Uruguay",
+    "categories": [
+        "entertainment",
+        "lifestyle",
+        "personalization",
+        "social",
+        "shopping"
+    ],
+    "icons": [
+        {
+            "src": "img/peluLogo-72x72.jpg",
+            "sizes": "72x72",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/peluLogo-96x96.jpg",
+            "sizes": "96x96",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/peluLogo-142x142.jpg",
+            "sizes": "142x142",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/peluLogo-152x152.jpg",
+            "sizes": "152x152",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/peluLogo-192x192.jpg",
+            "sizes": "192x192",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/peluLogo-384x384.jpg",
+            "sizes": "384x384",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/peluLogo-512x512.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+    ]
+}

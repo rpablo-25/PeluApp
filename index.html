@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <title>La Pelu</title>
+
+    <style>
+        html {
+            background-color: #fee0ed;
+        }
+
+        /* Estilos del Slider */
+        .snap-x {
+            scroll-snap-type: x mandatory;
+
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .snap-start {
+            scroll-snap-align: start;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- paleta colores:
+        #f067A2     rosa
+        #F0E373     amarillo pastel
+        #CD5BF0     violeta intermedio
+
+        #724FF0     violeta oscuro (opcional)
+    -->
+
+    <!-- Barra Navegacion "Sticky" con Tailwind CSS -->
+    <nav class="sticky-top bg-yellow-300" style="z-index: 12000;">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+
+                    <div class="sm:block sm:ml-6">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <div class="flex-shrink-0 flex items-center">
+                                <img class="lg:block h-8 w-auto" src="/img/logo-cabecera.png">
+                            </div>
+
+                            <a href="#experiencias"
+                                class="text-gray-800 hover:bg-gray-700 hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Experiencias</a>
+                            <a href="#nosotros"
+                                class="text-gray-800 hover:bg-gray-700 hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
+
+                            <a href="ttps://wa.me/59893757386?text=Me%20gustaría%20coordinar%20hora"
+                                class="text-gray-800 hover:bg-gray-700 hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </nav>
+
+    <!-- slider "experiencias" de imagenes con css y js {contenedor Tailwind}-->
+    <div class="container-fluid">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/img/woman-586185_1280.jpg" style="width: 100%;" />
+                <div class="text">Corte</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/pink-hair-1450045_1280.jpg" style="width: 100%;" />
+                <div class="text">Corte Hombre</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/woman-3288365_1280.jpg" style="width: 100%;" />
+                <div class="text">Lavado</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- ↓ Promociones y productos ↓ -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/comb-350077_640.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Este podria ser por ejemplo un producto:
+                            con alguna descripcion breve de que es y su precio
+                            <b>$1500</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/beauty-4993472_640.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Este podria ser por ejemplo otro producto:
+                        con alguna descripcion breve de que es y desde luego
+                        tambien con su respectivo precio
+                        <b>$480</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/estetica-2901096_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Este podria ser por ejemplo otro producto:
+                        con alguna descripcion breve de que es y desde luego
+                        tambien con su respectivo precio
+                        <b>$480</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/cosmetics-3084006_640.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Este podria ser por ejemplo otro producto:
+                        con alguna descripcion breve de que es y desde luego
+                        tambien con su respectivo precio
+                        <b>$480</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/makeup-1209798_640.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Este podria ser por ejemplo otro producto:
+                        con alguna descripcion breve de que es y desde luego
+                        tambien con su respectivo precio
+                        <b>$480</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <!-- Nuestro Staff -->
+
+    <div class="containter-md" id="staff">
+
+        <div class="row">
+            <div class="col-6 border">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/gettyimages-170046270-2048x2048.jpg" class="card-img-top" alt="Nuestro Equipo">
+                    <div class="card-body">
+                        <p class="card-text">Nuestro equipo cuenta con
+                            amplia experiencia, anios de trabajo en
+                            el rubro y profesionales de primera categoria
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 border">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/gettyimages-169951897-2048x2048.jpg" class="card-img-top" alt="Nuestro Equipo2">
+                    <div class="card-body">
+                        <p class="card-text">El equipo humano que hemos conformado
+                            se encargara de que su paso por nuestro salon
+                            sea unico, atencion..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ↓ Scripts JS ↓ -->
+
+    <script>
+        /* Scripts del Slider */
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
